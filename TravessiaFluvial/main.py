@@ -45,7 +45,7 @@ class Boat:
         self.layer = (self.layer - 1) * -1
 
     def __str__(self) -> str:
-        return colored("‖‖‖", None, "on_light_yellow")
+        return colored(" ⛵ ", None, None)
 
 
 class Game:
@@ -210,7 +210,7 @@ class Game:
             print(f"{str(self.boat): ^60}") #
         else: print()                              #
 
-        print("\n" + colored(" ", None, "on_light_cyan") * 60, end="\n\n") # Lines 4, 5 and 6
+        print("\n" + "🌊" * 30, end="\n\n") # Lines 4, 5 and 6
 
         if self.boat.layer == 0:                   # Line 7
             print(f"{str(self.boat): ^60}") #
